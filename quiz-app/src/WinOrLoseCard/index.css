@@ -1,0 +1,67 @@
+.win-or-lose-card {
+  text-align: center;
+  color: white;
+  padding: 40px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.1));
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 30px rgba(255,255,255,0.05);
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+.result-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.score-text {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.highlight {
+  color: #00ffcc;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0,255,204,0.7);
+}
+
+.percentage-text {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.restart-button {
+  background: linear-gradient(90deg, #ff512f, #dd2476);
+  color: white;
+  font-size: 1rem;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+.restart-button:hover {
+  transform: scale(1.08);
+  background: linear-gradient(90deg, #dd2476, #ff512f);
+  box-shadow: 0 0 20px rgba(255,255,255,0.4);
+}
+
+/* Subtle entrance animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

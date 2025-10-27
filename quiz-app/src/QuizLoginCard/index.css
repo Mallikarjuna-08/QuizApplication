@@ -1,0 +1,57 @@
+/* ===== QuizLoginCard Styles ===== */
+.login-card-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0d47a1, #1976d2, #42a5f5);
+  font-family: "Poppins", sans-serif;
+}
+
+.login-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.4s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+}
+
+.login-title {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.login-subtitle {
+  font-size: 1rem;
+  color: #e3f2fd;
+  margin-bottom: 30px;
+}
+
+.start-button {
+  background-color: #ffca28;
+  color: #212121;
+  font-size: 1.1rem;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #ffc107;
+  transform: scale(1.05);
+}
+
+.start-button:active {
+  transform: scale(0.97);
+}
